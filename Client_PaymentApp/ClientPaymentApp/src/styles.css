@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+.mouse-hover{
+    cursor: grab;
+}
+
+form input.ng-invalid{
+    border-color: red;
+}
+
+form.submitted input.ng-invalid {
+  border-color: red;
+}

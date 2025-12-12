@@ -1,0 +1,23 @@
+<form [formGroup]="pdFormGroup" [class.submitted]="">
+  <div class="mb-3">
+    <label> CARD OWNER NAME </label>
+    <input class="form-control" formControlName="cardOwnerName" id="cardOwnerName" maxlength="20" placeholder="Card Holder Name" required>
+  </div>
+  <div class="mb-3">
+    <label> CARD NUMBER </label>
+    <input class="form-control" formControlName="cardNumber" id="cardNumber" maxlength="16" minlength="16" placeholder="16 Digit Card Number" required>
+  </div>
+  <div class="row">
+    <div class="mb-3 col-6">
+      <label> SECURITY CODE </label>
+      <input class="form-control" formControlName="securityCode" id="securityCode" type="password" maxlength="3" minlength="3" placeholder="CVV" required>
+    </div>
+    <div class="mb-3 col-6">
+      <label> VALID THROUGH </label>
+      <input class="form-control" formControlName="expirationDate" id="expirationDate" maxlength="5" minlength="5" placeholder="MM/YY" required>
+    </div>
+  </div>
+  <div class="d-grid">
+    <button class="btn btn-lg btn-success" type="submit" (click)="OnClickSubmit()"> Submit</button>
+  </div>
+</form>
