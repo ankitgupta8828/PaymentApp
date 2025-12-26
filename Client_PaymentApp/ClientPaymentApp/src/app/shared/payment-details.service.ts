@@ -1,15 +1,15 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { paymentURL } from "./payment-details-url";
 import { PaymentDetailsModel } from "./payment-details.model";
 import { Observable } from "rxjs";
 import { PaymentDetailsViewModel } from "./payment-details.viewmodel";
+import { environment } from "../../environments/environment";
 
 @Injectable({ providedIn: "root" })
 export class PaymentDetailsService {
 
   paymentDetailsViewModel: PaymentDetailsViewModel = null;
-  url: string = paymentURL.apiBaseUrl;
+  url: string = environment.apiBaseUrl;
   constructor(private http: HttpClient) {
 
   }
