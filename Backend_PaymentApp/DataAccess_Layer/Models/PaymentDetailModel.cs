@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PaymentApp.Models
+namespace DataAccess_Layer.Models
 {
     public class PaymentDetailModel
     {

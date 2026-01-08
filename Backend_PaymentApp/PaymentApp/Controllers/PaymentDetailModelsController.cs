@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccess_Layer;
+using DataAccess_Layer.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PaymentApp.Models;
 
 namespace PaymentApp.Controllers
 {
@@ -13,9 +14,9 @@ namespace PaymentApp.Controllers
     [ApiController]
     public class PaymentDetailModelsController : ControllerBase
     {
-        private readonly PaymentDBContext _context;
+        private readonly AppDbContext _context;
 
-        public PaymentDetailModelsController(PaymentDBContext context)
+        public PaymentDetailModelsController(AppDbContext context)
         {
             _context = context;
         }
