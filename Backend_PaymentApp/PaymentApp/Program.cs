@@ -1,5 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-using PaymentApp.Models;
+using DataAccess_Layer;
+using DataAccess_Layer.Models;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<PaymentDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("AppConnectionString")));
+//this line configures the entity framework for this PaymentApp application centralizing it in a single location and coonfiguring it here using an extension method
+builder.Services.AddConnectionConfiguration(builder.Configuration);
+
+//builder.Services.AddDbContext<PaymentDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("AppConnectionString")));
 
 builder.Services.AddCors(options =>
 {
@@ -26,7 +30,7 @@ app.UseCors("AllowAngular");
 // Configure the HTTP request pipeline.
 
 app.UseDefaultFiles(); //it loads the static files
-app.UseStaticFiles(); // used to render the index.html
+app.UseStaticFiles(); // used to render the static files like index.html
 
 if (app.Environment.IsDevelopment())
 {

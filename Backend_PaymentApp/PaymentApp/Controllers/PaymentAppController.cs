@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DataAccess_Layer;
+using DataAccess_Layer.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PaymentApp.Models;
 
 namespace PaymentApp.Controllers
 {
@@ -9,8 +10,8 @@ namespace PaymentApp.Controllers
     [ApiController]
     public class PaymentAppController : ControllerBase
     {
-        private readonly PaymentDBContext _context;
-        public PaymentAppController(PaymentDBContext context)
+        private readonly AppDbContext _context;
+        public PaymentAppController(AppDbContext context)
         {
             _context = context;
         }

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentApp", "PaymentApp\PaymentApp.csproj", "{D054FE8E-0822-4B81-905F-3E81D8716133}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentApp_LoginPage", "PaymentApp_LoginPage\PaymentApp_LoginPage.csproj", "{09D2570E-BC0D-43A2-86E7-F4D57213F414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess_Layer", "DataAccess_Layer\DataAccess_Layer.csproj", "{B56FCA32-7B07-4F5B-9F8C-BE7505EF09AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D054FE8E-0822-4B81-905F-3E81D8716133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D054FE8E-0822-4B81-905F-3E81D8716133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D054FE8E-0822-4B81-905F-3E81D8716133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D2570E-BC0D-43A2-86E7-F4D57213F414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D2570E-BC0D-43A2-86E7-F4D57213F414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D2570E-BC0D-43A2-86E7-F4D57213F414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D2570E-BC0D-43A2-86E7-F4D57213F414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56FCA32-7B07-4F5B-9F8C-BE7505EF09AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56FCA32-7B07-4F5B-9F8C-BE7505EF09AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56FCA32-7B07-4F5B-9F8C-BE7505EF09AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56FCA32-7B07-4F5B-9F8C-BE7505EF09AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
