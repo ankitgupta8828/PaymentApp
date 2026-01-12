@@ -31,8 +31,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "PAYMENT_API_BASE_URL": "http://localhost:5241/"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }
